@@ -21,12 +21,12 @@ pipeline {
             }
             stage('Test') {
                 steps {
-                    sh "mvn -Dmaven.compile.skip test"
+                    sh "mvn test"
                 }
             }
             stage('Package') {
                 steps {
-                    sh "mvn package -Dmaven.test.skip=true -Dmaven.compile.skip=true"
+                    sh "mvn -Dmaven.test.skip package"
                 }
             }
         }
