@@ -13,6 +13,7 @@ public class App
         System.out.println(sayHelloToSomeone("Bob"));
         System.out.println(sayHelloToSomeone("Charlie"));
         System.out.println(sayHelloToSomeone("Heejoo"));
+	System.out.println(sayHelloToSomeone("Checking if the Git trigger has worked"));
         System.out.println(sayGoodbye());
     }
 
